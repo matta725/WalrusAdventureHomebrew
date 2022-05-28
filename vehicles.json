@@ -1,17 +1,10 @@
 {
     "vehicle": [
         {
-			"name": "Devil's Ride",
+			"name": "Devil Ride",
 			"source": "WAH",
 			"vehicleType": "INFWAR",
 			"size": "L",
-			"weight": 500,
-			"terrain": [
-				"land"
-			],
-			"capCreature": 1,
-			"capCargo": 100,
-			"speed": 120,
 			"str": 14,
 			"dex": 18,
 			"con": 12,
@@ -20,25 +13,9 @@
 			"cha": 0,
 			"hp": {
 				"hp": 30,
-				"dt": "DT 5",
-				"mt": "Mishap 10"
+				"dt": 5,
+				"mt": 10
 			},
-			"immune": [
-				"fire",
-				"poison",
-				"psychic"
-			],
-			"conditionImmune": [
-				"blinded",
-				"charmed",
-				"deafened",
-				"frightened",
-				"paralyzed",
-				"petrified",
-				"poisoned",
-				"stunned",
-				"unconscious"
-			],
 			"trait": [
 				{
 					"name": "Jump",
@@ -59,7 +36,7 @@
 					]
 				}
 			],
-			"actionStation": [
+            "actionStation": [
 				{
 					"name": "Drive (Helm)",
 					"entries": [
@@ -67,25 +44,18 @@
 					]
 				}
 			],
-			"reaction": [
-				{
-					"type": "entries",
-					"name": "Juke",
-					"entries": [
-						"If the Devil's Ride is able to move, the driver can use its reaction to grant the Devil's Ride advantage on a Dexterity saving throw."
-					]
-				}
-			],
-            "fluff": {
-                "images": {
-                      "type": "image",
-                      "href": {
-                         "type": "external",
-                          "url": "https://raw.githubusercontent.com/matta725/WalrusAdventureHomebrew/main/assets/devilsride.png?token=GHSAT0AAAAAABUUJMDU64PH7MNJP37OXSIQYURPP6A"
-                    }
-                }
-            },
-            "tokenUrl": "https://raw.githubusercontent.com/matta725/WalrusAdventureHomebrew/main/assets/devilsride.png?token=GHSAT0AAAAAABUUJMDU64PH7MNJP37OXSIQYURPP6A"
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/matta725/WalrusAdventureHomebrew/main/assets/devilsride.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/matta725/WalrusAdventureHomebrew/main/assets/devilsride.png"
 		}
     ]
 }
