@@ -16,7 +16,7 @@
         {
                 "name": "Devil's Ride",
                 "source": "WAH",
-                "vehicleType": "INFWAR",
+                "vehicleType": "SHIP",
                 "size": "L",
                 "weight": 500,
                 "terrain": [
