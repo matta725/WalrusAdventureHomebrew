@@ -1,4 +1,17 @@
 {
+    "_meta": {
+        "sources": [
+            {
+                "json": "WalrusAdventureHomebrew",
+                "abbreviation": "WAH",
+                "full": "Walrus Adventure Homebrew",
+                "authors": [
+                    "Walrus"
+                ],
+                "version": "1.0"
+            }
+        ]
+    },
     "vehicle": [
         {
                 "name": "Devil's Ride",
