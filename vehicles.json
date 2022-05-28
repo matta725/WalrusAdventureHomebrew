@@ -2,8 +2,7 @@
     "vehicle": [
         {
 			"name": "Devil's Ride",
-			"source": "BGDIA",
-			"page": 218,
+			"source": "WAH",
 			"vehicleType": "INFWAR",
 			"size": "L",
 			"weight": 500,
@@ -62,7 +61,7 @@
 			],
 			"actionStation": [
 				{
-					"name": "Helm (Requires 1 Crew and Grants Half Cover)",
+					"name": "Drive (Helm)",
 					"entries": [
 						"Drive and steer the Devil's Ride."
 					]
@@ -77,9 +76,16 @@
 					]
 				}
 			],
-			"hasToken": true,
-			"hasFluff": true,
-			"hasFluffImages": true
+            "fluff": {
+                "images": {
+                      "type": "image",
+                      "href": {
+                         "type": "external",
+                          "url": "https://raw.githubusercontent.com/matta725/WalrusAdventureHomebrew/main/assets/devilsride.png?token=GHSAT0AAAAAABUUJMDU64PH7MNJP37OXSIQYURPP6A"
+                    }
+                }
+            },
+            "tokenUrl": "https://raw.githubusercontent.com/matta725/WalrusAdventureHomebrew/main/assets/devilsride.png?token=GHSAT0AAAAAABUUJMDU64PH7MNJP37OXSIQYURPP6A"
 		}
     ]
 }
