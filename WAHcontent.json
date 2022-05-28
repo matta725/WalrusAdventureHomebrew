@@ -12,6 +12,111 @@
             }
         ]
     },
+    "race": [
+        {
+            "name": "Devilkin (Imp)",
+            "source": "WAH",
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "infernal": true
+                }
+            ],
+            "resist": [
+                "fire"
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Ability Scores:",
+                    "entries": [
+                        "1 Cha, +2 Any"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size:",
+                    "entries": [
+                        "Your size is small"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Speed:",
+                    "entries": [
+                        "35 ft"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Fiend:",
+                    "entries": [
+                        "You are both Fiend and Humanoid"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Devilish Resistance:",
+                    "entries": [
+                        "Your infernal bloodline gives you resistance to fire damage."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Darkvision:",
+                    "entries": [
+                        "You can seem in dim light within 60ft of you as if it were bright light and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Languages:",
+                    "entries": [
+                        "You can speak, read, and write Common and Infernal."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Impish Parentage:",
+                    "entries": [
+                        "As an Imp Devilkin, you are the spawn of an Imp and a human or other similar humanoid. You may be an incarnate of yourself from a previous life that had been the victim of an infernal contract and turned to this new form in the Nine Hells."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Appearance:",
+                    "entries": [
+                        "You take on many of the aspects that the Imp devil takes on. Your skin has a hue of red, you have a pair of small horns, a tail that is either whip-like or having a spine on the end. You can contort your smile into a mischevious maw of sharp teeth. Although you have adopted the wings from your Imp parentage, they are much too small to make  use of them."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Infernal Heritage:",
+                    "entries": [
+                        "You know the minor illusion cantrip. When you reach 3rd level you can cast the {@spell Hex} spell once per long rest, and when you reach 5th level you can cast the {@spell Invisibility} spell once with this trait. You regain the ability to do so when you finish a long rest. When you take this race you choose whether Charisma or Intelligence is your spellcasting ability for these spells.",
+                        {
+                            "type": "list",
+                            "items": [
+                                {
+                                    "type": "item",
+                                    "name": "Radiant Consumption.",
+                                    "entry": "Searing light temporarily radiates from your eyes and mouth. For the duration, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes radiant damage equal to your proficiency bonus. Until the transformation ends, once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
+                                }
+                            ],
+                            "style": "list-hang-notitle"
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Impish Stature:",
+                    "entries": [
+                        "You can move through the space of any creature that is of a size larger than yours."
+                    ]
+                }
+            ]
+        }
+    ],
     "vehicle": [
         {
                 "name": "Devil's Ride",
