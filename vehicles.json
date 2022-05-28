@@ -21,8 +21,8 @@
 			"cha": 0,
 			"hp": {
 				"hp": 30,
-				"dt": 5,
-				"mt": 10
+				"dt": "DT 5",
+				"mt": "Mishap 10"
 			},
 			"immune": [
 				"fire",
