@@ -1,49 +1,84 @@
 {
     "vehicle": [
         {
-			"name": "Devil Ride",
-			"source": "WAH",
-			"vehicleType": "INFWAR",
-			"size": "L",
-			"str": 14,
-			"dex": 18,
-			"con": 12,
-			"int": 0,
-			"wis": 0,
-			"cha": 0,
-			"hp": {
-				"hp": 30,
-				"dt": 5,
-				"mt": 10
-			},
-			"trait": [
-				{
-					"name": "Jump",
-					"entries": [
-						"If the Devil's Ride moves at least 30 feet in a straight line, it can clear a distance of up to 60 feet when jumping over a chasm, ravine, or other gap. Each foot it clears on the jump costs a foot of movement."
-					]
-				},
-				{
-					"name": "Prone Deficiency",
-					"entries": [
-						"If the Devil's Ride falls {@condition prone}, it can't right itself and is {@condition incapacitated} until pulled upright."
-					]
-				},
-				{
-					"name": "Stunt",
-					"entries": [
-						"On its turn, the driver of the Devil's Ride can expend 10 feet of movement to perform one free vehicle stunt, such as a wheelie or a burnout. Before the stunt can be performed, the Devil's Ride must move at least 10 feet in a straight line. If the driver succeeds on a DC 10 Dexterity check using the bike's Dexterity, the stunt is successful. Otherwise, the driver is unable to perform the stunt and can't attempt another stunt until the start of its next turn. If the check fails by 5 or more, the Devil's Ride and all creatures riding it immediately fall {@condition prone} as the bike wipes out and comes to a dead stop."
-					]
-				}
-			],
-            "actionStation": [
-				{
-					"name": "Drive (Helm)",
-					"entries": [
-						"Drive and steer the Devil's Ride."
-					]
-				}
-			],
+                "name": "Devil's Ride",
+                "source": "WAH",
+                "vehicleType": "INFWAR",
+                "size": "L",
+                "weight": 500,
+                "terrain": [
+                    "land"
+                ],
+                "capCreature": 1,
+                "capCargo": 100,
+                "speed": 120,
+                "str": 14,
+                "dex": 18,
+                "con": 12,
+                "hp": {
+                    "hp": 30,
+                    "dt": 5,
+                    "mt": 10
+                },
+                "immune": [
+                    "fire",
+                    "poison",
+                    "psychic"
+                ],
+                "conditionImmune": [
+                    "blinded",
+                    "charmed",
+                    "deafened",
+                    "frightened",
+                    "paralyzed",
+                    "petrified",
+                    "poisoned",
+                    "stunned",
+                    "unconscious"
+                ],
+                "trait": [
+                    {
+                        "name": "Jump",
+                        "entries": [
+                            "If the Devil's Ride moves at least 30 feet in a straight line, it can clear a distance of up to 60 feet when jumping over a chasm, ravine, or other gap. Each foot it clears on the jump costs a foot of movement."
+                        ]
+                    },
+                    {
+                        "name": "Prone Deficiency",
+                        "entries": [
+                            "If the Devil's Ride falls {@condition prone}, it can't right itself and is {@condition incapacitated} until pulled upright."
+                        ]
+                    },
+                    {
+                        "name": "Stunt",
+                        "entries": [
+                            "On its turn, the driver of the Devil's Ride can expend 10 feet of movement to perform one free vehicle stunt, such as a wheelie or a burnout. Before the stunt can be performed, the Devil's Ride must move at least 10 feet in a straight line. If the driver succeeds on a DC 10 Dexterity check using the bike's Dexterity, the stunt is successful. Otherwise, the driver is unable to perform the stunt and can't attempt another stunt until the start of its next turn. If the check fails by 5 or more, the Devil's Ride and all creatures riding it immediately fall {@condition prone} as the bike wipes out and comes to a dead stop."
+                        ]
+                    }
+                ],
+                "actionStation": [
+                    {
+                        "name": "Drive (Helm Action)",
+                        "entries": [
+                            "Drive and steer the Devil's Ride."
+                        ]
+                    },
+                    {
+                        "name": "Floor It (Helm Bonus Action)",
+                        "entries": [
+                            "Double the movement speed of the devil's ride until the end of your turn."
+                        ]
+                    }
+                ],
+                "reaction": [
+                    {
+                        "type": "entries",
+                        "name": "Juke (Helm Reaction)",
+                        "entries": [
+                            "If the Devil's Ride is able to move, the driver can use its reaction to grant the Devil's Ride advantage on a Dexterity saving throw."
+                        ]
+                    }
+                ],
 			"fluff": {
 				"images": [
 					{
