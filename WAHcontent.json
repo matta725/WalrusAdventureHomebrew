@@ -51,21 +51,21 @@
                 ],
                 "trait": [
                     {
-                        "name": "Jump",
+                        "name": "Jump (Maneuver)",
                         "entries": [
                             "If the Devil's Ride moves at least 30 feet in a straight line, it can clear a distance of up to 60 feet when jumping over a chasm, ravine, or other gap. Each foot it clears on the jump costs a foot of movement."
                         ]
                     },
                     {
-                        "name": "Prone Deficiency",
+                        "name": "Stunt (Maneuver)",
                         "entries": [
-                            "If the Devil's Ride falls {@condition prone}, it can't right itself and is {@condition incapacitated} until pulled upright."
+                            "On its turn, the driver of the Devil's Ride can expend 10 feet of movement to perform one free vehicle stunt, such as a wheelie or a burnout. Before the stunt can be performed, the Devil's Ride must move at least 10 feet in a straight line. If the driver succeeds on a DC 10 Dexterity check using the bike's Dexterity, the stunt is successful. Otherwise, the driver is unable to perform the stunt and can't attempt another stunt until the start of its next turn. If the check fails by 5 or more, the Devil's Ride and all creatures riding it immediately fall prone as the bike wipes out and comes to a dead stop."
                         ]
                     },
                     {
-                        "name": "Stunt",
+                        "name": "Prone Deficiency",
                         "entries": [
-                            "On its turn, the driver of the Devil's Ride can expend 10 feet of movement to perform one free vehicle stunt, such as a wheelie or a burnout. Before the stunt can be performed, the Devil's Ride must move at least 10 feet in a straight line. If the driver succeeds on a DC 10 Dexterity check using the bike's Dexterity, the stunt is successful. Otherwise, the driver is unable to perform the stunt and can't attempt another stunt until the start of its next turn. If the check fails by 5 or more, the Devil's Ride and all creatures riding it immediately fall {@condition prone} as the bike wipes out and comes to a dead stop."
+                            "If the Devil's Ride falls prone, it can't right itself and is incapacitated until pulled upright."
                         ]
                     }
                 ],
@@ -104,6 +104,110 @@
 				]
 			},
 			"tokenUrl": "https://raw.githubusercontent.com/matta725/WalrusAdventureHomebrew/main/assets/devilsride.png"
-		}
+		},
+        {
+            "name": "Tormentor",
+            "source": "WAH",
+            "vehicleType": "INFWAR",
+            "size": "H",
+            "weight": 500,
+            "terrain": [
+                "land"
+            ],
+            "capCreature": 4,
+            "capCargo": 500,
+            "speed": 100,
+            "str": 16,
+            "dex": 14,
+            "con": 14,
+            "hp": {
+                "hp": 60,
+                "dt": 10,
+                "mt": 20
+            },
+            "immune": [
+                "fire",
+                "poison",
+                "psychic"
+            ],
+            "conditionImmune": [
+                "blinded",
+                "charmed",
+                "deafened",
+                "frightened",
+                "paralyzed",
+                "petrified",
+                "poisoned",
+                "stunned",
+                "unconscious"
+            ],
+            "trait": [
+                {
+                    "name": "Crushing Wheels (Maneuver)",
+                    "entries": [
+                        "The Tormentor can move through the space of any Medium or smaller creature. When it does, the creature must succeed on a DC 13 Dexterity saving throw or take 11 (2d10) bludgeoning damage and be knocked prone.If the creature was already prone, it takes an extra 11 (2d10) bludgeoning damage.This trait can't be used against a particular creature more than once each turn."
+                    ]
+                },
+                {
+                    "name": "Magic Weapons",
+                    "entries": [
+                        "The Tormentor's weapon attacks are magical."
+                    ]
+                },
+                {
+                    "name": "Prone Deficiency",
+                    "entries": [
+                        "If the Tormentor rolls over and falls prone, it can't right itself and is incapacitated until flipped upright."
+                    ]
+                },
+                {
+                    "name": "Raking Scythes (Maneuver)",
+                    "entries": [
+                        "When the Tormentor moves within 5 feet of a creature that isn't prone or another vehicle for the first time on a turn, it can rake the creature or vehicle with its protruding blades for 13 (2d10 + 2) slashing damage. A creature moves out of the way and takes no damage if it succeeds on a DC 13 Dexterity saving throw.A vehicle moves out of the way and takes no damage if its driver succeeds on the saving throw."
+                    ]
+                }
+            ],
+            "actionStation": [
+                {
+                    "name": "Drive (Helm Action)",
+                    "entries": [
+                        "Drive and steer the Devil's Ride."
+                    ]
+                },
+                {
+                    "name": "Floor It (Helm Bonus Action)",
+                    "entries": [
+                        "Double the movement speed of the devil's ride until the end of your turn."
+                    ]
+                },
+                {
+                    "name": "Fire Harpoon (Harpoon Flinger Action)",
+                    "entries": [
+                        "Ranged Weapon Attack: +7 to hit, range 120 ft., one target. Hit: 11 (2d8 + 2) piercing damage."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "type": "entries",
+                    "name": "Juke (Helm Reaction)",
+                    "entries": [
+                        "If the Tormentor is able to move, the driver can use its reaction to grant the Tormentor advantage on a Dexterity saving throw."
+                    ]
+                }
+            ],
+        "fluff": {
+            "images": [
+                {
+                    "type": "image",
+                    "href": {
+                        "type": "external",
+                        "url": "https://raw.githubusercontent.com/matta725/WalrusAdventureHomebrew/main/assets/tormentor.png"
+                    }
+                }
+            ]
+        },
+        "tokenUrl": "https://raw.githubusercontent.com/matta725/WalrusAdventureHomebrew/main/assets/tormentor.png"
+    }
     ]
 }
