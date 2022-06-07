@@ -314,5 +314,187 @@
         },
         "tokenUrl": "https://raw.githubusercontent.com/matta725/WalrusAdventureHomebrew/main/assets/tormentor.png"
     }
+    ],
+    "monster": [
+        {
+            "name": "Rargitch Fell Omen",
+            "source": "",
+            "size": [
+                "L"
+            ],
+            "type": {
+                "type": "fiend",
+                "tags": [
+                    "demon"
+                ]
+            },
+            "alignment": [
+                "C",
+                "E"
+            ],
+            "alignmentPrefix": "Typically ",
+            "ac": [
+                {
+                    "ac": 14,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "formula": "12d12 + 48",
+                "average": 126
+            },
+            "speed": {
+                "walk": 50
+            },
+            "str": 19,
+            "dex": 18,
+            "con": 18,
+            "int": 14,
+            "wis": 16,
+            "cha": 11,
+            "senses": [
+                "darkvision 120 ft."
+            ],
+            "passive": 13,
+            "resist": [
+                "cold",
+                "fire",
+                "necrotic"
+            ],
+            "immune": [
+                "poison"
+            ],
+            "conditionImmune": [
+                "charmed",
+                "poisoned"
+            ],
+            "languages": [
+                "Abyssal",
+                "telepathy 120 ft."
+            ],
+            "cr": "7",
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "Rargitch makes 1 cane and 1 radiant dagger attack. If Rargitch is focused he makes an additional cane or holy hammer attack. "
+                    ]
+                },
+                {
+                    "name": "Cane",
+                    "entries": [
+                        "{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}11 ({@damage 1d10 + 6}) bludgeoning damage. Once per round Rargitch can charge his cane attack dealing an extra {@damage 2d8} bludgeoning damage. Once he does so, attacks against him have advantage until the start of his next turn. "
+                    ]
+                },
+                {
+                    "name": "Daemon Dagger",
+                    "entries": [
+                        "{@atk rw} {@hit 7} to hit, range 30/120 ft., one target. {@h}9 ({@damage 2d4}) necrotic damage."
+                    ]
+                },
+                {
+                    "name": "Tail",
+                    "entries": [
+                        "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
+                    ]
+                },
+                {
+                    "name": "Righteous Hammer",
+                    "entries": [
+                        "{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d10 + 4}) necrotic damage."
+                    ]
+                }
+            ],
+            "environment": [
+                "underdark"
+            ],
+            "senseTags": [
+                "SD"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "languageTags": [
+                "AB",
+                "TP"
+            ],
+            "damageTags": [
+                "B",
+                "N"
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true,
+            "tokenUrl": "https://raw.githubusercontent.com/matta725/WalrusAdventureHomebrew/main/assets/tsuru-margit.webp",
+            "save": {
+                "dex": "+7",
+                "wis": "+6"
+            },
+            "skill": {
+                "athletics": "+7",
+                "insight": "+6"
+            },
+            "trait": [
+                {
+                    "name": "Immutable Form",
+                    "entries": [
+                        "The rargitch fell omen is immune to any spell or effect that would alter its form."
+                    ]
+                },
+                {
+                    "name": "Magic Weapons",
+                    "entries": [
+                        "The rargitch fell omen's weapon attacks are magical."
+                    ]
+                },
+                {
+                    "name": "Legendary Resistance (1/Day)",
+                    "entries": [
+                        "If the rargitch fell omen fails a saving throw, it can choose to succeed instead."
+                    ]
+                },
+                {
+                    "name": "Focus (1/Day)",
+                    "entries": [
+                        "When Rargitch drops below half his hit point maximum, he starts taking the battle seriously and gains access to new abilities, which are included in the stat block. He can use 1 additional legendary action each round. In addition, he immediately makes one crush attack at the end of the turn where his focus activates. ."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Immutable Form",
+                "Legendary Resistances",
+                "Magic Weapons"
+            ],
+            "miscTags": [
+                "MW",
+                "RCH",
+                "RW",
+                "THW"
+            ],
+            "reaction": [
+                {
+                    "name": "Tail Swipe",
+                    "entries": [
+                        "When a creature ends its turn in a space behind Rargitch, Rargitch can use his reaction to make a tail attack against them. "
+                    ]
+                },
+                {
+                    "name": "Dagger Throw",
+                    "entries": [
+                        "When a creature within 30 feet of Rargitch uses a healing item or casts a spell Rargitch can use his reaction to make a ranged Daemon Dagger attack against the target. "
+                    ]
+                }
+            ],
+            "legendaryActions": 1,
+            "legendary": [
+                {
+                    "name": "Dangerous Retreat",
+                    "entries": [
+                        "Rargitch makes 2 Daemon Dagger attacks and then leaps 20 feet to an empty space that he can see without triggering attacks of oppportunities. "
+                    ]
+                }
+            ]
+        }
     ]
 }
