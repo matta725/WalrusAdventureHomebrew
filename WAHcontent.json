@@ -495,6 +495,690 @@
                     ]
                 }
             ]
-        }
+        },
+        {
+    			"name": "Crystal Gargoyle",
+    			"source": "WalrusAdventureHomebrew",
+    			"size": [
+    				"L"
+    			],
+    			"type": "elemental",
+    			"alignment": [
+    				"L",
+    				"E"
+    			],
+    			"ac": [
+    				{
+    					"ac": 18,
+    					"from": [
+    						"natural armor"
+    					]
+    				}
+    			],
+    			"hp": {
+    				"formula": "16d20 + 96",
+    				"average": 264
+    			},
+    			"speed": {
+    				"fly": {
+    					"number": 60,
+    					"condition": "(hover)"
+    				},
+    				"canHover": true,
+    				"walk": 40,
+    				"climb": 20
+    			},
+    			"str": 18,
+    			"dex": 22,
+    			"con": 14,
+    			"int": 14,
+    			"wis": 14,
+    			"cha": 12,
+    			"skill": {
+    				"athletics": "+9",
+    				"acrobatics": "+11",
+    				"perception": "+12"
+    			},
+    			"passive": 22,
+    			"immune": [
+    				"poison",
+    				"psychic",
+    				"radiant"
+    			],
+    			"conditionImmune": [
+    				"charmed",
+    				"exhaustion",
+    				"paralyzed",
+    				"petrified",
+    				"poisoned"
+    			],
+    			"cr": "15",
+    			"action": [
+    				{
+    					"name": "Multiattack",
+    					"entries": [
+    						"The gargoyle makes four attacks, each with one of the crystal appendages protruding from it's arms. All of these attacks are Crystal Smash attacks, one may be substituted with an impale attack. "
+    					]
+    				},
+    				{
+    					"name": "Crystal Smash",
+    					"entries": [
+    						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}19 ({@damage 3d8 + 6}) piercing damage."
+    					]
+    				},
+    				{
+    					"name": "Impaling Crystal",
+    					"entries": [
+    						"{@atk rw} {@hit 11} to hit, range 30/120 ft., one target. {@h}27 ({@damage 2d20 + 6}) damage."
+    					]
+    				},
+    				{
+    					"name": "Light Shower {@recharge 5}",
+    					"entries": [
+    						"The gargoyle targets all creatures in a 10ft square within 60ft of the golem, forcing all creatures to make a {@dc 18} Dexterity saving throw. On a failed save, targets take {@damage 6d8} Radiant damage and half as much on a success. The targets are also burned with a radiant blight that keeps them from being healed until the start of the gargoyle's next turn. "
+    					]
+    				}
+    			],
+    			"actionTags": [
+    				"Multiattack"
+    			],
+    			"damageTags": [
+    				"P"
+    			],
+    			"conditionInflictSpell": [
+    				"charmed"
+    			],
+    			"hasFluff": true,
+    			"hasFluffImages": true,
+    			"tokenUrl": "https://5e.tools/img/ToA/Giant%20Four-Armed%20Gargoyle.png",
+    			"fluff": {
+    				"entries": [
+    					{
+    						"type": "entries",
+    						"entries": [
+    							"Abhorrent overlords are gaunt, bipedal creatures whose gray, leathery skin is in stark contrast to the gleaming jewelry made of Underworld gold that they adorn themselves with. Their appetite for pain and death is eclipsed only by their greed; these fiends delight in searching out treasure and slaughtering all who stand in their way."
+    						]
+    					}
+    				],
+    				"images": [
+    					{
+    						"type": "image",
+    						"href": {
+    							"type": "external",
+    							"url": "https://5e.tools/img/ToA/Giant%20Four-Armed%20Gargoyle.png"
+    						}
+    					}
+    				]
+    			},
+    			"save": {
+    				"dex": "+11",
+    				"str": "+6",
+    				"con": "+4",
+    				"int": "+4",
+    				"wis": "+4",
+    				"cha": "+3"
+    			},
+    			"conditionInflict": [
+    				"blinded"
+    			],
+    			"reaction": [
+    				{
+    					"name": "Radiate",
+    					"entries": [
+    						"If attacked by a creature within 10ft, the gargoyle may use its reaction to flash its light brightly at the creature causing the creature to take a {@dice 1d4} penalty to the attack. "
+    					]
+    				}
+    			],
+    			"languages": [
+    				"Common",
+    				"Primordial"
+    			],
+    			"languageTags": [
+    				"C",
+    				"P"
+    			],
+    			"resist": [
+    				{
+    					"resist": [
+    						"bludgeoning",
+    						"piercing",
+    						"slashing"
+    					],
+    					"note": "from nonmagical weapons"
+    				}
+    			],
+    			"senses": [
+    				"blindsight 60 ft.",
+    				"darkvision 60 ft."
+    			],
+    			"senseTags": [
+    				"B",
+    				"D"
+    			],
+    			"trait": [
+    				{
+    					"name": "Immutable Form",
+    					"entries": [
+    						"The crystal gargoyle is immune to any spell or effect that would alter its form."
+    					]
+    				},
+    				{
+    					"name": "Light Intensity",
+    					"entries": [
+    						"Any creature that starts its turn within 10 feet of the illuminated golem and can see the golem must succeed on a {@dc 16} Wisdom saving throw or be {@condition blinded} until the start of the creature's next turn.",
+    						"A creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the golem until the start of its next turn, when it can avert its eyes again. If the creature looks at the golem in the meantime, it must immediately make the save."
+    					]
+    				},
+    				{
+    					"name": "Magic Resistance",
+    					"entries": [
+    						"The crystal gargoyle has advantage on saving throws against spells and other magical effects."
+    					]
+    				}
+    			],
+    			"traitTags": [
+    				"Immutable Form",
+    				"Magic Resistance"
+    			],
+    			"legendaryActions": 1,
+    			"legendary": [
+    				{
+    					"name": "Crystal Glide",
+    					"entries": [
+    						"The gargoyle may move up to its movement speed in a straight line, not provoking opportunity attacks. If the gargoyle passes by a creature within 5ft of it during this they may make one crystal smash attack on them. "
+    					]
+    				},
+    				{
+    					"name": "Cruel Drop",
+    					"entries": [
+    						"The gargoyle m ay attempt to grapple a creature with one attack, then move up to its movement speed straight up into the air. "
+    					]
+    				}
+    			],
+    			"miscTags": [
+    				"MW",
+    				"RCH",
+    				"RW"
+    			]
+    		},
+    		{
+    			"name": "Augmented Bone Collective",
+    			"source": "WalrusAdventureHomebrew",
+    			"size": "H",
+    			"type": "undead",
+    			"alignment": [
+    				"C",
+    				"E"
+    			],
+    			"ac": [
+    				{
+    					"ac": 18,
+    					"from": [
+    						"natural armor"
+    					]
+    				}
+    			],
+    			"hp": {
+    				"formula": "17d12 + 85",
+    				"average": 240
+    			},
+    			"speed": {
+    				"walk": 40
+    			},
+    			"str": 24,
+    			"dex": 14,
+    			"con": 20,
+    			"int": 7,
+    			"wis": 12,
+    			"cha": 13,
+    			"save": {
+    				"con": "+10",
+    				"dex": "+7"
+    			},
+    			"senses": [
+    				"blindsight 60ft",
+    				"darkvision 60 ft."
+    			],
+    			"passive": 11,
+    			"immune": [
+    				"necrotic",
+    				"poison"
+    			],
+    			"cr": "15",
+    			"trait": [
+    				{
+    					"name": "Magic Resistance",
+    					"entries": [
+    						"The collective has advantage on saving throws against spells and other magical effects."
+    					]
+    				}
+    			],
+    			"action": [
+    				{
+    					"name": "Multiattack",
+    					"entries": [
+    						"The collective makes three attacks: one with its Flurry of Bones, one to encase, and one with its Bone Throw."
+    					]
+    				},
+    				{
+    					"name": "Flurry of Bones",
+    					"entries": [
+    						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}27 ({@damage 6d6 + 7}) bludgeoning damage."
+    					]
+    				},
+    				{
+    					"name": "Encase in Bones",
+    					"entries": [
+    						"{@atk mw} {@hit 10} to hit, reach 15 ft., one Large or smaller creature. {@h}17 ({@damage 2d6 + 7}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 19}). Until this grapple ends, the target is {@condition restrained} and takes 17 ({@damage 2d6 + 7}) bludgeoning damage at the start of each of its turns. The typhon can have up to two creatures constricted."
+    					]
+    				},
+    				{
+    					"name": "Bone Throw",
+    					"entries": [
+    						"The bone collective may choose a single target within 30ft of the collective. The targeted creature must make a {@dc 15} Dexterity saving throw or be knocked {@condition prone} and take ({@dice 4d10 + 3}) bludgeoning damage. (Recharge 5-6)"
+    					]
+    				}
+    			],
+    			"traitTags": [
+    				"Magic Resistance"
+    			],
+    			"senseTags": [
+    				"B",
+    				"D"
+    			],
+    			"actionTags": [
+    				"Multiattack"
+    			],
+    			"damageTags": [
+    				"B"
+    			],
+    			"miscTags": [
+    				"MW",
+    				"RCH"
+    			],
+    			"conditionInflict": [
+    				"grappled",
+    				"prone",
+    				"restrained"
+    			],
+    			"hasFluff": true,
+    			"hasFluffImages": true,
+    			"tokenUrl": "https://5e.tools/img/MOT/Typhon.png",
+    			"fluff": {
+    				"name": "Typhon",
+    				"source": "MOT",
+    				"entries": [
+    					{
+    						"type": "entries",
+    						"entries": [
+    							"Titanic horrors of writhing flesh and gnashing maws, typhons slither through the Underworld seeking only to consume. Once the souls of mortal warlords and cruel tyrants, typhons come into being over ages of festering bitterness and rage. Over time, these souls twist into eternally ravenous monstrosities, which rampage through the realm of the dead, consuming souls by the thousands. The Underworld remains their prison, though, and most would relish nothing more than to escape and slaughter the living once more."
+    						]
+    					}
+    				],
+    				"images": [
+    					{
+    						"type": "image",
+    						"href": {
+    							"type": "internal",
+    							"path": "bestiary/MOT/Typhon.jpg"
+    						}
+    					}
+    				]
+    			},
+    			"resist": [
+    				{
+    					"resist": [
+    						"piercing",
+    						"slashing"
+    					],
+    					"note": "from nonmagical attacks"
+    				}
+    			],
+    			"legendaryHeader": [
+    				"The bone collective can take 1 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The bone collective regains spent legendary actions at the start of its turn."
+    			],
+    			"legendary": [
+    				{
+    					"name": "Bone Tumble",
+    					"entries": [
+    						"The Bone Collective may move up to 15ft away, not provoking opportunity attacks, causing tremors in the ground as it seeps into the ground and the bones of the collective rumble. Each creature in it's path must make a {@dc 15} Strength saving throw or take {@damage 3d8} Bludgeoning Damage and be knocked {@condition prone}. On a success, the target is not knocked {@condition prone} and takes half as much damage. "
+    					]
+    				}
+    			],
+    			"conditionImmune": [
+    				"charmed",
+    				"exhaustion",
+    				"paralyzed",
+    				"petrified",
+    				"poisoned",
+    				"stunned"
+    			]
+    		},
+    		{
+
+    				"name": "Flayed Demanglerfish",
+    				"source": "WalrusAdventureHomebrew",
+    				"size": [
+    					"L"
+    				],
+    				"type": "fiend",
+    				"alignment": [
+    					"N",
+    					"E"
+    				],
+    				"ac": [
+    					{
+    						"ac": 16,
+    						"from": [
+    							"unarmored defense"
+    						]
+    					}
+    				],
+    				"hp": {
+    					"formula": "16d10 + 32",
+    					"average": 100
+    				},
+    				"speed": {
+    					"swim": 40
+    				},
+    				"str": 18,
+    				"dex": 20,
+    				"con": 14,
+    				"int": 8,
+    				"wis": 14,
+    				"cha": 7,
+    				"skill": {
+    					"athletics": "+8",
+    					"acrobatics": "+9",
+    					"stealth": "+9"
+    				},
+    				"senses": [
+    					"darkvision 120 ft."
+    				],
+    				"passive": 12,
+    				"resist": [
+    					{
+    						"resist": [
+    							"cold",
+    							"lightning"
+    						]
+    					},
+    					{
+    						"resist": [
+    							"bludgeoning",
+    							"slashing"
+    						],
+    						"note": "from nonmagical weapons"
+    					}
+    				],
+    				"immune": [
+    					"poison"
+    				],
+    				"conditionImmune": [
+    					"poisoned"
+    				],
+    				"cr": "9",
+    				"trait": [
+    					{
+    						"name": "Translucent Body",
+    						"entries": [
+    							"The body of the demanglerfish is translucent except for its light and part of its brain, giving it advantage on Dexterity (Stealth) checks. "
+    						]
+    					},
+    					{
+    						"name": "Magic Resistance",
+    						"entries": [
+    							"The demanglerfish has advantage on saving throws against spells and other magical effects."
+    						]
+    					}
+    				],
+    				"action": [
+    					{
+    						"name": "Multiattack",
+    						"entries": [
+    							"The demanglerfish makes an attack with its tail whip and an attack with its bite. "
+    						]
+    					},
+    					{
+    						"name": "Bite",
+    						"entries": [
+    							"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}17 ({@damage 3d8 + 4}) piercing damage."
+    						]
+    					},
+    					{
+    						"name": "Tail Whip",
+    						"entries": [
+    							"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d10 + 5}) bludgeoning damage. On a hit, the target must succeed a {@dc 17} strength saving throw or lose 10ft of movement speed on their next turn as they are spun up in a gust of current. "
+    						]
+    					},
+    					{
+    						"name": "Light Flash {@recharge 5}",
+    						"entries": [
+    							"The demanglerfish uses it's light and flashes it in a 60ft cone in front of it. Each creature caught in the flash must make a {@dc 17} Constitution saving throw or take {@damage 4d8} Radiant damage and be {@condition blinded} or take half as much on a success with no blindness. "
+    						]
+    					}
+    				],
+    				"traitTags": [
+    					"Magic Resistance"
+    				],
+    				"senseTags": [
+    					"SD"
+    				],
+    				"actionTags": [
+    					"Multiattack"
+    				],
+    				"damageTags": [
+    					"P",
+    					"B"
+    				],
+    				"miscTags": [
+    					"MW",
+    					"RCH"
+    				],
+    				"conditionInflictSpell": [
+    					"charmed"
+    				],
+    				"hasFluff": true,
+    				"hasFluffImages": true,
+    				"tokenUrl": "https://5e.tools/img/MOT/Abhorrent Overlord.png",
+    				"fluff": {
+    					"name": "Abhorrent Overlord",
+    					"source": "MOT",
+    					"entries": [
+    						{
+    							"type": "entries",
+    							"entries": [
+    								"Abhorrent overlords are gaunt, bipedal creatures whose gray, leathery skin is in stark contrast to the gleaming jewelry made of Underworld gold that they adorn themselves with. Their appetite for pain and death is eclipsed only by their greed; these fiends delight in searching out treasure and slaughtering all who stand in their way."
+    							]
+    						}
+    					],
+    					"images": [
+    						{
+    							"type": "image",
+    							"href": {
+    								"type": "internal",
+    								"path": "bestiary/MOT/Abhorrent Overlord.jpg"
+    							}
+    						}
+    					]
+    				},
+    				"save": {
+    					"dex": "+9",
+    					"str": "+8"
+    				},
+    				"conditionInflict": [
+    					"blinded"
+    				],
+    				"reaction": [
+    					{
+    						"name": "Light Strobe",
+    						"entries": [
+    							"If attacked by a creature within 10ft, the demanglerfish may use its reaction to flash its light rapidly at the creature causing the creature to take a {@dice 1d4} penalty to the attack. "
+    						]
+    					}
+    				]
+
+    		},
+    		{
+    				"name": "Flayed Drab",
+    				"source": "WalrusAdventureHomebrew",
+    				"size": [
+    					"L"
+    				],
+    				"type": "fiend",
+    				"alignment": [
+    					"N",
+    					"E"
+    				],
+    				"alignmentPrefix": "Typically ",
+    				"ac": [
+    					{
+    						"ac": 15,
+    						"from": [
+    							"natural armor"
+    						]
+    					}
+    				],
+    				"hp": {
+    					"formula": "12d8 + 24",
+    					"average": 85
+    				},
+    				"speed": {
+    					"walk": 30,
+    					"swim": 50,
+    					"burrow": 15
+    				},
+    				"str": 17,
+    				"dex": 12,
+    				"con": 15,
+    				"int": 6,
+    				"wis": 10,
+    				"cha": 5,
+    				"skill": {
+    					"athletics": "+6"
+    				},
+    				"senses": [
+    					"darkvision 120 ft."
+    				],
+    				"passive": 10,
+    				"resist": [
+    					{
+    						"resist": [
+    							"bludgeoning",
+    							"piercing",
+    							"slashing"
+    						],
+    						"note": "from nonmagical weapons"
+    					}
+    				],
+    				"cr": "7",
+    				"action": [
+    					{
+    						"name": "Multiattack",
+    						"entries": [
+    							"The drab makes two pincher attacks"
+    						]
+    					},
+    					{
+    						"name": "Pincher",
+    						"entries": [
+    							"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}19 ({@damage 3d10 + 3}) bludgeoning damage, and the target is {@condition grappled}. If the creature is huge or larger, the target is not {@condition grappled}. The {@condition grappled} creature may use its action to attempt to escape (escape {@dc 14})"
+    						]
+    					}
+    				],
+    				"reaction": [
+    					{
+    						"name": "Claw Shield",
+    						"entries": [
+    							"If a creature makes an attack on the crab, the drab may use a pincher to shield them from the attack, granting them a +2 to their AC. If it causes the attack to miss, the drab is still hit but only takes half damage from the attack. "
+    						]
+    					}
+    				],
+    				"environment": [
+    					"arctic",
+    					"coastal",
+    					"swamp",
+    					"underdark",
+    					"underwater"
+    				],
+    				"senseTags": [
+    					"SD"
+    				],
+    				"actionTags": [
+    					"Multiattack"
+    				],
+    				"damageTags": [
+    					"B"
+    				],
+    				"hasFluff": true,
+    				"tokenUrl": "https://5e.tools/img/MPMM/Lost Sorrowsworn.png",
+    				"fluff": {
+    					"name": "Lost Sorrowsworn",
+    					"source": "MPMM",
+    					"entries": [
+    						{
+    							"type": "entries",
+    							"entries": [
+    								"The Shadowfell turns visitors around until they become marooned in its twisted landscape. Lost sorrowsworn—often referred to as the Lost—are representations of the anxiety and fear people experience when they can't find their way. These sorrowsworn appear desperate and panicked.",
+    								"Lost sorrowsworn grasp at any creatures they can reach. A victim experiences a flood of fear and panic as its mind buckles under the fury of this assault. The harder a victim's allies fight to break the grasp, the more the victim suffers."
+    							]
+    						},
+    						{
+    							"type": "section",
+    							"name": "Sorrowsworn",
+    							"entries": [
+    								"The Shadowfell's pervasive melancholy sometimes gives rise to strange incarnations of the plane's bleak nature. Sorrowsworn embody the forms of suffering inherent to the shadowy landscape and visit horror on those who stumble into their midst. Each sorrowsworn personifies a different aspect of despair or distress."
+    							]
+    						}
+    					]
+    				},
+    				"conditionImmune": [
+    					"charmed",
+    					"frightened",
+    					"paralyzed"
+    				],
+    				"bonus": [
+    					{
+    						"name": "Propulse",
+    						"entries": [
+    							"Leaving a trail of fine bubbles and turbulence, the crab may use its bonus action to take the dash action. "
+    						]
+    					},
+    					{
+    						"name": "Crunch",
+    						"entries": [
+    							"The drab may use its bonus action to crunch a creature caught in it's pinchers, dealing {@damage 3d10 + 3} bludgeoning damage. "
+    						]
+    					}
+    				],
+    				"save": {
+    					"str": "+6",
+    					"con": "+5"
+    				},
+    				"miscTags": [
+    					"MW"
+    				],
+    				"conditionInflict": [
+    					"grappled"
+    				],
+    				"trait": [
+    					{
+    						"name": "False Appearance",
+    						"entries": [
+    							"While the drab remains motionless, it is indistinguishable from an ordinary object. "
+    						]
+    					},
+    					{
+    						"name": "Amphibious",
+    						"entries": [
+    							"The drab can breathe air and water."
+    						]
+    					}
+    				],
+    				"traitTags": [
+    					"Amphibious",
+    					"False Appearance"
+    				]
+    		}
     ]
 }
