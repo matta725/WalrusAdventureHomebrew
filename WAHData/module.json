@@ -1,0 +1,32 @@
+{   
+   "name": "WAHData",   
+   "title": "WAHData Data",   
+   "description": "Sharing data across worlds",   
+   "author": "Walrus",
+   "version": "1.0.0",
+   "minimumCoreVersion": "0.5.0",
+   "compatibleCoreVersion":"1.0.0",
+   "packs": [
+    {
+      "name": "equipment",
+      "label": "WAH Items",
+      "path": "packs/items.db",
+      "entity": "Item",
+      "module": "WAHData"
+    },
+    {
+      "name": "monsters",
+      "label": "WAH Monsters",
+      "path": "packs/vehicles.db",
+      "entity": "Actor",
+      "module": "WAHData"
+    },
+    {
+      "name": "vehicles",
+      "label": "WAH Vehicles",
+      "path": "packs/vehicles.db",
+      "entity": "Vehicle",
+      "module": "WAHData"
+    }
+  ]
+ }

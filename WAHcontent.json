@@ -1179,6 +1179,444 @@
     					"Amphibious",
     					"False Appearance"
     				]
-    		}
+    		},
+			{
+				"name": "Teostra (Hunted)",
+				"size": [
+					"H"
+				],
+				"type": {
+					"type": "dragon",
+					"tags": [
+						"elder"
+					]
+				},
+				"group": [
+					"Elder Dragons"
+				],
+				"environment": [
+					"desert",
+					"mountain",
+					"swamp",
+					"underdark",
+					"urban"
+				],
+				"source": "",
+				"alignment": [
+					"U"
+				],
+				"ac": [
+					{
+						"ac": 15,
+						"from": [
+							"natural armor"
+						]
+					}
+				],
+				"hp": {
+					"formula": "12d12 + 60",
+					"average": 180
+				},
+				"speed": {
+					"walk": 50,
+					"fly": 40
+				},
+				"str": 21,
+				"dex": 15,
+				"con": 21,
+				"int": 14,
+				"wis": 15,
+				"cha": 10,
+				"save": {
+					"str": "+9",
+					"wis": "+6",
+					"cha": "+4"
+				},
+				"skill": {
+					"perception": "+6",
+					"acrobatics": "+6"
+				},
+				"immune": [
+					"fire"
+				],
+				"conditionImmune": [
+					"charmed",
+					"frightened",
+					"poisoned"
+				],
+				"passive": 16,
+				"languages": [
+					"Draconic"
+				],
+				"cr": {
+					"cr": "12",
+					"lair": "14"
+				},
+				"page": 125,
+				"senses": [
+					"darkvision 120 ft."
+				],
+				"trait": [
+					{
+						"name": "Fire Aura",
+						"entries": [
+							"At the start of each of the teostra's turns, each creature within 5 feet of it takes 3 ({@damage 1d6}) fire damage, and flammable objects in the aura that aren't being worn or carried ignite. A creature that touches the teostra or hits it with a melee attack while within 5 feet of it takes 3 ({@damage 1d6}) fire damage."
+						]
+					},
+					{
+						"name": "Standing Leap",
+						"entries": [
+							"The teostra's long jump is up to 30 feet and its high jump is up to 15 feet, with or without a running start."
+						]
+					},
+					{
+						"name": "Poison Susceptibility",
+						"entries": [
+							"While {@condition poisoned}, the Tesotra's Fire Aura is deactivated, it must land on its next turn, and is unable to fly until the {@condition poisoned} is removed. Once the {@condition poisoned} condition is removed, the lunastra's Fire Aura once again takes effect."
+						]
+					}
+				],
+				"action": [
+					{
+						"name": "Multiattack",
+						"entries": [
+							"The teostra makes three attacks; two claw attacks one bite or tail attack."
+						]
+					},
+					{
+						"name": "Bite",
+						"entries": [
+							"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}18 ({@damage 3d8 + 5}) piercing damage."
+						]
+					},
+					{
+						"name": "Claws",
+						"entries": [
+							"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}15 ({@damage 3d6 + 5}) slashing damage."
+						]
+					},
+					{
+						"name": "Tail",
+						"entries": [
+							"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}18 ({@damage 3d8 + 5}) bludgeoning damage. On hit, the target must make a {@dc 18} Strength saving throw or be knocked {@condition prone}."
+						]
+					},
+					{
+						"name": "Deadly Leap",
+						"entries": [
+							"If the teostra jumps at least 15 feet as part of its movement, it can then use this action to land on its feet in a space that contains one or more other creatures. Each of those creatures must succeed on a {@dc 18} Strength or Dexterity saving throw (target's choice) or be knocked {@condition prone} and take 32 ({@damage 6d8 + 5}) bludgeoning damage. On a successful save, the creature takes only half the damage, isn't knocked {@condition prone}, and is pushed 5 feet out of the teostra's space into an unoccupied space of the creature's choice. If no unoccupied space is with in range, the creature instead falls {@condition prone} in the teostra's space."
+						]
+					},
+					{
+						"name": "Fire Breath {@recharge 5}",
+						"entries": [
+							"The teostra exhales fire in a 60-foot cone. Each creature in that area must make a {@dc 19} Dexterity saving throw, taking 31 ({@damage 9d6}) fire damage on a failed save, or half as much on a successful one."
+						]
+					},
+					{
+						"name": "Supernova",
+						"entries": [
+							"The teostra beats its wings rising 20 feet into the air and releases a large burst of fire all around it. Each creature within 25 foot radius of the teostra must succeed on a {@dc 19} Dexterity saving throw, taking 45 ({@damage 10d8}) fire damage and are pushed back 10 feet on a failed save, or half as much on a successful one and not pushed back."
+						]
+					}
+				],
+				"legendary": [
+					{
+						"name": "Move",
+						"entries": [
+							"The teostra moves up to its speed without provoking opportunity attacks."
+						]
+					},
+					{
+						"name": "Attack",
+						"entries": [
+							"The teostra makes a bite attack."
+						]
+					},
+					{
+						"name": "Detonate (Costs 2 Actions)",
+						"entries": [
+							"All Explosive Clouds detonate and burst into flames. Each creature within 10-feet of a explosive cloud must make a {@dc 16} Dexterity saving throw, taking 22 ({@damage 4d10}) fire damage on a failed save or half as much on a successful one. If a creature is within range of more than one explosive cloud, they take an additional 22 ({@damage 4d10}) fire damage for each additional cloud."
+						]
+					},
+					{
+						"name": "Devil's Powder (Costs 2 Actions)",
+						"entries": [
+							"At the start of the teostra's turn, it beats its wings and four clouds of explosive powder appear in unoccupied 5-foot cubes of air within 60 feet of the teostra. Additionally every 15 feet the Teostra moves, it leaves a cloud of explosive powder in a 5-foot cube. The clouds disperse after detonation, until a wind of moderate or greater speed (at least 10 miles per hour) disperses it, or when the teostra dies.",
+							"As a Bonus action, the teostra can move up to two of these clouds 10 feet in any direction."
+						]
+					}
+				],
+				"actionTags": [
+					"Breath Weapon",
+					"Multiattack"
+				],
+				"languageTags": [
+					"DR"
+				],
+				"senseTags": [
+					"SD"
+				],
+				"fluff": {
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"Teostra is a dragon with leonine features and a fiery coloration. It has a grand mane, large fangs, and a pair of horns that curve backward. Its wings are covered in fur. Teostra is the male counterpart to {@creature Lunastra|MHMM}. Being predatory Elder Dragons Teostra are powerful top predators and are easily capable of killing weaker animals such as {@creature Aptonoth|MHMM}, {@creature Conga|MHMM}, {@creature Bulldrome|MHMM}, {@creature Iodrome|MHMM}, {@creature Apceros|MHMM}, and {@creature Cephadrome|MHMM}. Armed with razor sharp claws and flesh ripping teeth these Elder Dragons make short work of prey and smaller predators.",
+								"Possessing mastery over flame, there are few creatures that can hope to last against Teostra for long. To defend itself, the Teostra also utilizes a heat shield which damages enemies that get too close. To keep its flame powers going, they consume coal in volcanic environments. It also has detachable wing scales or powder that explode when ignited from a spark made when Teostra bites. It uses these to defend itself from attackers, although they give little protection against enemies with resilience to extreme heat such as {@creature Akantor|MHMM} or {@creature Lavasioth|MHMM}.",
+								"Teostra can even use the powder for many close range attacks but more skilled Teostra have learnt to use the powder at long range. When Teostra angered, it will fly into the air and ignite the powder all at once. When the powder is all ignited, Teostra will be covered in a large burst of fire, that is sometimes referred to as the Supernova.",
+								"{@creature tempered teostra|MHMM|Some extremely rare individuals} have more control over their flaming powers than most. They have a different appearance also including more yellow wing webbing, a more reddish mane, red claws, orange tail end and golden eyes. New flame techniques include leaving pockets of explosive powder across the area in the air as it fights and setting them all a flame at will.",
+								"Teostra are a very aggressive monster. It will show dominance to anything that it encounters. Compared to Lunastra, who give warnings to get out of its territory, Teostra will ruthlessly attack intruders until they are dead. As one of the most aggressive Elder Dragons, Teostra are highly feared. It is not advised to go out into the Desert, Volcano, Swamp, or Tower when pairing with {@creature Lunastra|MHMM}, as the prospect of fighting both Lunastra and Teostra together is often considered suicidal.",
+								{
+									"type": "inset",
+									"name": "Teostra",
+									"entries": [
+										{
+											"type": "table",
+											"colStyles": [
+												"col-1 bold",
+												"col-1",
+												"col-2 bold text-right",
+												"col-1 text-center"
+											],
+											"rows": [
+												[
+													"Challenge Rating",
+													"13",
+													"Carves",
+													"4"
+												]
+											]
+										},
+										{
+											"type": "table",
+											"colLabels": [
+												"Carve Chance",
+												"Material",
+												"Slots"
+											],
+											"colStyles": [
+												"col-1 text-center",
+												"col-2 text-center",
+												"col-1 text-center"
+											],
+											"rows": [
+												[
+													"1-2",
+													"Elder Dragon Bone",
+													"(O)"
+												],
+												[
+													"3-4",
+													"Elder Dragon Blood",
+													"(O)"
+												],
+												[
+													"5-7",
+													"Fire Dragon Scale",
+													"(A,W)"
+												],
+												[
+													"8-10",
+													"Teostra Carapace",
+													"(A,W)"
+												],
+												[
+													"11-12",
+													"Teostra Claw",
+													"(W)"
+												],
+												[
+													"13-14",
+													"Teostra Webbing",
+													"(A,W)"
+												],
+												[
+													"15-16",
+													"Teostra Tail",
+													"(W)"
+												],
+												[
+													"17-19",
+													"Teostra Mane",
+													"(W)"
+												],
+												[
+													"19",
+													"Teostra Horn",
+													"(A,W)"
+												],
+												[
+													"20",
+													"Teostra Gem",
+													"(A,W)"
+												]
+											]
+										},
+										{
+											"type": "list",
+											"style": "list-hang",
+											"name": "ARMOR MATERIAL EFFECTS",
+											"items": [
+												{
+													"type": "entries",
+													"name": "Fire Dragon Scale",
+													"entries": [
+														"{@i Biology.} You become proficient with {@item dung bomb|AGMH}s while you are wearing this armor, and you are immune to blight effects such as {@condition waterblight|MHMM}, {@condition iceblight|MHMM}, or the {@spell blight} spell."
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Teostra Carapace",
+													"entries": [
+														"While wearing this armor you can use an action to cast the {@spell protection from energy} (fire) spell from it. This property can be used twice, regaining all expended uses daily at dawn."
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Teostra Webbing",
+													"entries": [
+														"While wearing this armor you have resistance to fire damage."
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Teostra Horn",
+													"entries": [
+														"{@i Wide-Range.} When you use {@table plants|AGMH|Herbs}, {@item Antidote|AGMH}s, {@item Cool Drink|AGMH}s, {@item Hot Drink|AGMH}s, {@table plants|AGMH|Adamant Seeds, or Might Seeds}; all other creatures within a 10-foot radius of you gain its effect."
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Teostra Gem",
+													"entries": [
+														"{@i (Spellcaster only)} While wearing this armor you can use an action to cast the {@spell fire shield} (warm shield) spell from it. Once used, you can't use this property again until the next dawn."
+													]
+												}
+											]
+										},
+										{
+											"type": "list",
+											"style": "list-hang",
+											"name": "WEAPON MATERIAL EFFECTS",
+											"items": [
+												{
+													"type": "entries",
+													"name": "Fire Dragon Scale",
+													"entries": [
+														"{@i Quick Load.} You can reload as a free action while you are attuned to this weapon."
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Teostra Carapace",
+													"entries": [
+														"{@i (Bow only) Special Ammo Boost+1.} Your coating now coats up to 25 arrows and your dragonpiercer deals an extra 2d6 piercing damage."
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Teostra Claw",
+													"entries": [
+														"Your weapon deals an extra 1d6 fire damage."
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Teostra Webbing",
+													"entries": [
+														"{@i Weakness Exploit.} When you have advantage on an attack roll with this weapon and you hit the target, you can have your weapon deal its maximum damage if the lower of the two d20 rolls would also hit the target (all extra damage dice must still be rolled). You can use this property a number of times equal to your Strength or Dexterity modifier (your choice), regaining all expended uses when you finish a long rest."
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Teostra Tail",
+													"entries": [
+														"Once per turn, when you hit a creature with a melee weapon attack using this Weapon, you can engulf the target in flames. At the start of each of the engulfed creature's turns, it takes {@damage 1d4} fire damage and it can then make a {@dc 15} Dexterity saving throw, putting out the flames on a successful save. Alternatively, the engulfed creature, or a creature within 5 feet of it, can use an action to smother the flames ending the effect."
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Teostra Mane",
+													"entries": [
+														"{@i Critical Eye.} Your weapon attacks critical hit range is increased by 1."
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Teostra Horn",
+													"entries": [
+														"{@i Reckless Abandon.} When you make your first attack on your turn with this weapon, you can choose to without care or regard for consequences. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but disadvantage on all saving throws and all attack rolls against you have advantage until the start of your next turn."
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Teostra Gem",
+													"entries": [
+														"{@i Latent Power +1.} When you are reduced to a quarter of your maximum hit points for the first time in combat or at the start of your turn on the 10th round of combat, whichever comes first, you gain the effects of the {@spell haste} spell for 1 minute. Once used, you must finish a short or long rest before you can use this property again."
+													]
+												}
+											]
+										},
+										{
+											"type": "list",
+											"style": "list-hang",
+											"name": "OTHER MATERIAL EFFECTS",
+											"items": [
+												{
+													"type": "entries",
+													"name": "Elder Dragon Blood",
+													"entries": [
+														"Any rarity weapon upgrade material."
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Elder Dragon Bone",
+													"entries": [
+														"Any rarity armor upgrade material."
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "A Teostra's Lair",
+							"entries": [
+								"Teostra's lair in high mountains or volcanoes, dwelling in caverns underground in the desert, or within the deep halls of abandoned mines and dwarven strongholds. Caves with volcanic or geothermal activity are the most highly prized teostra's lair, creating hazards that hinder intruders and letting searing heat and volcanic gases wash over a teostra as it sleeps. On rare occasions they can be seen living in more temperate areas such as a swamp or ancient forest, changing the area around it to suit its needs.",
+								"A teostra's lair is sometimes confused with a red dragon's lair due to both of them mainly preferring areas with intense heat. On many occasions a teostra will attempt to take a red dragon's lair for its own, either by killing the red dragon or causing it to flee while gravely injured, leaving its horde of treasure behind. The teostra will guard this horde, mainly because it now belongs to him, but will typically not add to its treasure, being more concerned with intruders than riches.",
+								"A teostra encountered in its lair has a challenge rating of 14 (11,500 XP). A tempered teostra's challenge rating remains the same."
+							]
+						}
+					]
+				},
+				"legendaryGroup": {
+					"name": "Teostra",
+					"source": "MHMM"
+				},
+				"tokenUrl": "https://i.imgur.com/ZDw1XOJ.png",
+				"damageTags": [
+					"B",
+					"F",
+					"P",
+					"S"
+				],
+				"miscTags": [
+					"MW",
+					"RCH",
+					"AOE"
+				],
+				"legendaryActions": 2,
+				"conditionInflict": [
+					"prone"
+				],
+				"damageTagsLegendary": [
+					"F"
+				]
+		}
     ]
 }
